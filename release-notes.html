@@ -25,14 +25,12 @@
     }
 
     /* Common */
-
     div.content {
         padding-left: 16px;
         padding-right: 16px;
     }
 
     /* Title */
-
     h1 {
         padding-bottom: 30px;
     }
@@ -55,13 +53,11 @@
     }
 
     /* Version */
-
     span.badge {
         vertical-align: middle;
     }
 
     /* Content Outer */
-
     hr.mid {
         border-top: 3px dotted;
     }
@@ -78,7 +74,6 @@
     }
 
     /* Content Inner */
-
     span.item-keyword {
         font-weight: bold;
         color: var(--bs-emphasis-color);
@@ -121,92 +116,55 @@
             }
         })()
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!--
         Title
     -->
-
     <h1>
-        <span class="title-logo"><img class="title-logo" src="icon.svg" /></span>
-        Release Notes
+        <span class="title-logo"><img class="title-logo" src="icon.svg" /></span> Release Notes
     </h1>
-
     <!--
         Version
     -->
     <hr class="mid">
     <h3>
         <div class="content">
-            <span class="version-title">
-                1.0.1.xx
-            </span>
-            <span class="version-date">
-                2024-04-13
-            </span>
+            <span class="version-title"> 1.0.1.xx </span>
+            <span class="version-date"> 2024-04-13 </span>
         </div>
     </h3>
     <hr class="mid">
-
     <!--
         Content
     -->
     <div class="content">
         <h4>General</h4>
         <ul>
-            <li class="new">Added protection against simultaneous PepperText instances.
-                <ul>
-                    <li class="detail">After launching PepperText, subsequent launch attempts will just cause the first
-                        instance to be brought to view.</li>
+            <li class="new">Added protection against simultaneous PepperText instances.<ul>
+                    <li class="detail">After launching PepperText, subsequent launch attempts will just cause the first instance to be brought to view.</li>
                 </ul>
             </li>
             <li class="fix">Fixed tooltips to be more prevalent, and a lot more responsive.</li>
             <li class="fix">Fixed the issue where drag-drop can't drop if hovered over a textbox.</li>
-            <li class="fix">Fixed the issue where on startup, text expansion hasn't been suspended (meaning pop-up/text
-                expansion
-                is triggered on the interface itself).</li>
+            <li class="fix">Fixed the issue where on startup, text expansion hasn't been suspended (meaning pop-up/text expansion is triggered on the interface itself).</li>
         </ul>
         <h4>Navigation Pane (Left side)</h4>
         <ul>
-            <li class="new"> Added an easier-to-discover 'Add' Folder/Page button, when you hover over the Snippet
-                Roots/Folder.
-            </li>
-            <li class="new"> Added a confirmation pop-up before a Folder/Page gets deleted, to avoid accidental
-                deletion.</li>
-            <li class="new"> Added the automatic creation of a new Page, within creating a new Folder.</li>
-            <li class="fix">Changed the Snippets Root from a hard drive to a binder, which better fits the folder+page
-                theme.
-            </li>
-            <li class="fix">Changed it so that the Snippets Root and Folders can no longer be activated/deactivated.
-                This can
-                only be
-                done for Pages now, for simplicity.</li>
+            <li class="new">Added an easier-to-discover 'Add' Folder/Page button, when you hover over the Snippet Roots/Folder.</li>
+            <li class="new">Added a confirmation pop-up before a Folder/Page gets deleted, to avoid accidental deletion.</li>
+            <li class="new">Added the automatic creation of a new Page, within creating a new Folder.</li>
+            <li class="fix">Changed the Snippets Root from a hard drive to a binder, which better fits the folder+page theme.</li>
+            <li class="fix">Changed it so that the Snippets Root and Folders can no longer be activated/deactivated. This can only be done for Pages now, for simplicity.</li>
         </ul>
         <h4>Main Window (Right side)</h4>
         <ul>
-            <li class="fix">Changed the <span class="item-keyword">Context</span> option to exist inside <span
-                    class="item-keyword">Advanced Settings</span> instead, and the <span
-                    class="item-keyword">Context</span>
-                item-keyword is
-                now known as
-                <span class="item-keyword">Expansion Control</span>.
-            </li>
-            <li class="fix">Changed the <span class="item-keyword">Context</span> (now known as <span
-                    class="item-keyword">Expansion
-                    Control</span>) to have 3 simple options instead of 5 specific ones.</li>
-            <li class="fix">Changed the <span class="item-keyword">Text Replace (Instant)</span> mode to be instead
-                named as
-                <span class="item-keyword">Instant Text
-                    Replace</span>.
-            </li>
+            <li class="fix">Changed the <span class="item-keyword">Context</span> option to exist inside <span class="item-keyword">Advanced Settings</span> instead, and the <span class="item-keyword">Context</span> item-keyword is now known as <span class="item-keyword">Expansion Control</span>.</li>
+            <li class="fix">Changed the <span class="item-keyword">Context</span> (now known as <span class="item-keyword">Expansion Control</span>) to have 3 simple options instead of 5 specific ones.</li>
+            <li class="fix">Changed the <span class="item-keyword">Text Replace (Instant)</span> mode to be instead named as <span class="item-keyword">Instant Text Replace</span>.</li>
         </ul>
         <h4>Options (Bottom cog)</h4>
         <ul>
@@ -216,8 +174,7 @@
             </ul>
             <li class="new"> Added <span class="item-keyword">Auto-start PepperText On Windows Startup</span>.</li>
             <ul>
-                <li class="detail">If enabled, when you log into Windows, PepperText will automtically startup and run
-                    in the background. As usual, clicking on the System Tray brings back the interface.</li>
+                <li class="detail">If enabled, when you log into Windows, PepperText will automtically startup and run in the background. As usual, clicking on the System Tray brings back the interface.</li>
             </ul>
             <li class="new"> Added <span class="item-keyword">Exit</span>.</li>
             <ul>
@@ -226,18 +183,14 @@
         </ul>
         <h4>About Box</h4>
         <ul>
-            <li class="new"> Added links to <span class="item-keyword">peppertext.com</span> and <span
-                    class="item-keyword">Privacy
-                    Policy</span>.</li>
-            <li class="new"> Added <span class="item-keyword">EULA</span> and <span class="item-keyword">Credits</span>.
-            </li>
-            <li class="new"> Added fun animation when clicking on the logo.</li>
+            <li class="new">Added links to <span class="item-keyword">peppertext.com</span> and <span class="item-keyword">Privacy Policy</span>.</li>
+            <li class="new">Added <span class="item-keyword">EULA</span> and <span class="item-keyword">Credits</span>.</li>
+            <li class="new">Added fun animation when clicking on the logo.</li>
             <li class="fix">Changed the design.</li>
         </ul>
         <h4>Search</h4>
         <ul>
-            <li class="fix">Fixed the issue where clicking on a search result sometimes doesn't scrolls it into view.
-            </li>
+            <li class="fix">Fixed the issue where clicking on a search result sometimes doesn't scrolls it into view.</li>
         </ul>
         <h4>Pop-up</h4>
         <ul>
@@ -245,14 +198,10 @@
         </ul>
         <h4>Installer</h4>
         <ul>
-            <li class="new"> Added <span class="item-keyword">Select Destination Location</span> page, to allow a custom
-                install
-                location.
-            </li>
+            <li class="new"> Added <span class="item-keyword">Select Destination Location</span> page, to allow a custom install location.</li>
             <li class="new"> Added <span class="item-keyword">Start automatically on login</span> option.</li>
             <ul>
-                <li class="detail">If enabled, when you log into Windows, PepperText will automtically startup and run
-                    in the background. As usual, clicking on the System Tray brings back the interface.</li>
+                <li class="detail">If enabled, when you log into Windows, PepperText will automtically startup and run in the background. As usual, clicking on the System Tray brings back the interface.</li>
             </ul>
         </ul>
     </div>
