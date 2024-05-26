@@ -133,8 +133,8 @@
     <hr class="mid">
     <h3>
         <div class="content">
-            <span class="version-title"> 1.0.1.xx </span>
-            <span class="version-date"> 2024-04-13 </span>
+            <span class="version-title">1.0.1.20-beta</span>
+            <span class="version-date">2024-05-24</span>
         </div>
     </h3>
     <hr class="mid">
@@ -150,21 +150,27 @@
             </li>
             <li class="fix">Fixed tooltips to be more prevalent, and a lot more responsive.</li>
             <li class="fix">Fixed the issue where drag-drop can't drop if hovered over a textbox.</li>
-            <li class="fix">Fixed the issue where on startup, text expansion hasn't been suspended (meaning pop-up/text expansion is triggered on the interface itself).</li>
+            <li class="fix">(Mostly) Fixed the issue where on startup, text expansion hasn't been suspended (meaning pop-up/text expansion is triggered on the interface itself).</li>
         </ul>
         <h4>Navigation Pane (Left side)</h4>
         <ul>
             <li class="new">Added an easier-to-discover 'Add' Folder/Page button, when you hover over the Snippet Roots/Folder.</li>
             <li class="new">Added a confirmation pop-up before a Folder/Page gets deleted, to avoid accidental deletion.</li>
             <li class="new">Added the automatic creation of a new Page, within creating a new Folder.</li>
-            <li class="fix">Changed the Snippets Root from a hard drive to a binder, which better fits the folder+page theme.</li>
+            <li class="fix">Changed the Snippets Root from a hard drive to a binder.</li>
             <li class="fix">Changed it so that the Snippets Root and Folders can no longer be activated/deactivated. This can only be done for Pages now, for simplicity.</li>
         </ul>
         <h4>Main Window (Right side)</h4>
         <ul>
-            <li class="fix">Changed the <span class="item-keyword">Context</span> option to exist inside <span class="item-keyword">Advanced Settings</span> instead, and the <span class="item-keyword">Context</span> item-keyword is now known as <span class="item-keyword">Expansion Control</span>.</li>
-            <li class="fix">Changed the <span class="item-keyword">Context</span> (now known as <span class="item-keyword">Expansion Control</span>) to have 3 simple options instead of 5 specific ones.</li>
-            <li class="fix">Changed the <span class="item-keyword">Text Replace (Instant)</span> mode to be instead named as <span class="item-keyword">Instant Text Replace</span>.</li>
+            <li class="new">Added 'Learn more here' website links, for <span class="item-keyword">Label</span> and <span class="item-keyword">Shortcut Settings</span>.</li>
+            <li class="fix">Changed the <span class="item-keyword">Context</span> option:<ul>
+                    <li class="detail">Its name is now <span class="item-keyword">Shortcut Settings</span>.</li>
+                    <li class="detail">Its location is now under the new <span class="item-keyword">Advanced Options</span> (cog icon on the right of each Snippet).</li>
+                    <li class="detail">It now has 3 simple options instead of 5 specific ones.</li>
+                </ul>
+            </li>
+            <li class="fix">Changed the name of the <span class="item-keyword">Text Replace (Instant)</span> mode to <span class="item-keyword">Instant Text Replace</span>.</li>
+            <li class="fix">Changed the starting snippets (for brand new installs) to just a single Page of simple examples.</li>
         </ul>
         <h4>Options (Bottom cog)</h4>
         <ul>
@@ -188,7 +194,7 @@
             <li class="new">Added fun animation when clicking on the logo.</li>
             <li class="fix">Changed the design.</li>
         </ul>
-        <h4>Search</h4>
+        <h4>Search (Top-left corner)</h4>
         <ul>
             <li class="fix">Fixed the issue where clicking on a search result sometimes doesn't scrolls it into view.</li>
         </ul>
@@ -198,8 +204,8 @@
         </ul>
         <h4>Installer</h4>
         <ul>
-            <li class="new"> Added <span class="item-keyword">Select Destination Location</span> page, to allow a custom install location.</li>
-            <li class="new"> Added <span class="item-keyword">Start automatically on login</span> option.</li>
+            <li class="new">Added <span class="item-keyword">Start automatically on login</span> option.</li>
+            <li class="new">Installer is now signed (no more warnings on download and launch).</li>
             <ul>
                 <li class="detail">If enabled, when you log into Windows, PepperText will automtically startup and run in the background. As usual, clicking on the System Tray brings back the interface.</li>
             </ul>
