@@ -129,6 +129,74 @@
     <h1>
         <span class="title-logo"><img class="title-logo" src="icon.svg" /></span> Release Notes
     </h1>
+
+
+    <!--
+        Version
+    -->
+    <hr class="mid">
+    <h3>
+        <div class="content">
+            <span class="version-title">1.0.2.77-allspice</span>
+            <span class="version-date">2025-04-09</span>
+        </div>
+    </h3>
+    <hr class="mid">
+    <!--
+        Content
+    -->
+    <div class="content">
+        <h4>General</h4>
+        <ul>
+            <li class="new">Each release is now given a "Spice" nickname, for easier recognition.
+                <ul>
+                    <li class="detail"><b>Allspice</b> is our first new release!</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h4>Text Expansion Logic</h4>
+        <ul>
+            <li class="new"><b>Adaptive Casing</b> now checks only the first character, for simplicity.
+                <ul>
+                    <li class="detail">See 'Adaptive Casing' under <a href="https://peppertext.com/learn/casesensitivity/">Working With Case Sensitivity</a> for details.</li>
+                </ul>
+            </li>
+            <li class="new">When multiple <b>Instant Text Replace</b> items trigger at the same time, they are now shown in the <b>Pop-up Preview</b>. 
+                <ul>
+                    <li class="detail">Before, whichever is the first one would get expanded instantly.</li>
+                </ul></li>
+            <li class="fix"><b>Chaining</b> no longer breaks when you expand a link that contains a newline.</li>
+            <li class="fix"><b>Text Replace</b> expansions that don't actually alter the content (e.g., replacing 'abc' with 'abc') no longer get triggered.</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h4>Pop-up Preview</h4>
+        <ul>
+            <li class="new"><b>Snippet Preview Text</b> and <b>Labels</b> are now limited to 30 characters, to prevent the <b>Pop-up Preview</b> from getting too big.</li>
+            <li class="fix">Typing history is now cleared when <b>CTRL+A</b> is typed.</li>
+            <li class="fix"><b>Snippet Preview</b> now shows <b>Whitespace</b> (consecutive spaces, tabs and newlines) in a compact manner.</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h4>Options (Bottom cog)</h4>
+        <ul>
+            <li class="new">A new <span class="item-keyword">Preferences Dialog</span> is available in the <b>Settings Cog</b>.
+                <ul>
+                    <li class="detail"><b>[New Snippets]</b> Here you can set the <b>Mode</b>, <b>Case Sensitivity</b> and <b>Trigger Settings</b> of <b>New Snippets</b>.</li>
+                    <li class="detail"><b>[Desktop]</b> The <b>Run PepperText on Windows startup</b> option has moved here.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <h4>Installer</h4>
+        <ul>
+            <li class="fix">Fixed rare startup crash when run from deep file paths.</li>
+        </ul>
+    </div>
+
     <!--
         Version
     -->
